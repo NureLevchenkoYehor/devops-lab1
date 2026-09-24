@@ -1,4 +1,8 @@
-num = int(input("Enter a number: "))
+try:
+    num = int(input("Enter a number: "))
+except ValueError:
+    print("Invalid input! Please enter an integer.")
+    exit(1)
 
 if num == 0 or num == 1:
     print(num, "is not a prime number")
